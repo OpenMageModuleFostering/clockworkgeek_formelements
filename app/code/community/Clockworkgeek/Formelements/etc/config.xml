@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2015 Daniel Deady
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<config>
+    <modules>
+        <Clockworkgeek_Formelements>
+            <version>0.0.0</version>
+        </Clockworkgeek_Formelements>
+    </modules>
+
+    <global>
+        <blocks>
+            <formelements>
+                <class>Clockworkgeek_Formelements_Block</class>
+            </formelements>
+        </blocks>
+        <helpers>
+            <formelements>
+                <class>Clockworkgeek_Formelements_Helper</class>
+            </formelements>
+        </helpers>
+        <models>
+            <formelements>
+                <class>Clockworkgeek_Formelements_Model</class>
+            </formelements>
+        </models>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <formelements>
+                    <file>clockworkgeek/formelements.xml</file>
+                </formelements>
+            </updates>
+        </layout>
+        <events>
+            <adminhtml_product_attribute_types>
+                <observers>
+                    <formelements>
+                        <class>formelements/observer</class>
+                        <method>addProductAttributeTypes</method>
+                        <type>singleton</type>
+                    </formelements>
+                </observers>
+            </adminhtml_product_attribute_types>
+            <adminhtml_catalog_product_edit_element_types>
+                <observers>
+                    <formelements>
+                        <class>formelements/observer</class>
+                        <method>addProductAttributeElements</method>
+                        <type>singleton</type>
+                    </formelements>
+                </observers>
+            </adminhtml_catalog_product_edit_element_types>
+            <catalog_entity_attribute_save_before>
+                <observers>
+                    <formelements>
+                        <class>formelements/observer</class>
+                        <method>setAttributeBackendType</method>
+                        <type>singleton</type>
+                    </formelements>
+                </observers>
+            </catalog_entity_attribute_save_before>
+        </events>
+    </adminhtml>
+
+    <frontend>
+        <events>
+            <catalog_helper_output_construct>
+                <observers>
+                    <formelements>
+                        <class>formelements/output</class>
+                        <method>addProductAttributeHandlers</method>
+                        <type>singleton</type>
+                    </formelements>
+                </observers>
+            </catalog_helper_output_construct>
+        </events>
+    </frontend>
+
+    <default>
+        <general>
+            <validator_data>
+                <input_types>
+                    <formelements_color>color</formelements_color>
+                    <formelements_email>email</formelements_email>
+                    <formelements_number>number</formelements_number>
+                    <formelements_url>url</formelements_url>
+                    <formelements_mediaurl>mediaurl</formelements_mediaurl>
+                    <formelements_widget>widget</formelements_widget>
+                </input_types>
+            </validator_data>
+        </general>
+    </default>
+</config>

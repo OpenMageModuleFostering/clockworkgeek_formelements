@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Clockworkgeek_Formelements</name>
+    <version>0.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT">MIT</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds HTML5 input types and some WYSIWYG features to admin forms and product attributes.</summary>
+    <description/>
+    <notes>Initial release</notes>
+    <authors><author><name>Daniel Deady</name><user>daniel</user><email>daniel@clockworkgeek.com</email></author></authors>
+    <date>2015-05-17</date>
+    <time>10:23:23</time>
+    <contents><target name="magecommunity"><dir name="Clockworkgeek"><dir name="Formelements"><dir name="Block"><dir name="Adminhtml"><dir name="Renderer"><dir name="Fieldset"><dir name="Element"><file name="Abstract.php" hash="fcb87610344dcaaf1d5b7472fd12fb88"/><file name="Color.php" hash="a62592752f245b28b1edefd9cf3ab678"/><file name="Editor.php" hash="ff726c9d994eca4c45902e6ded651fca"/><file name="Email.php" hash="932e9002350f432418a7aa961596ca11"/><file name="Mediaurl.php" hash="6274a42b50b6e973f9f8a060cde3e4d6"/><file name="Number.php" hash="8bd61667ecee85a9e821e013c778d17c"/><file name="Url.php" hash="748108425cec1604a27db82ce61d5034"/></dir></dir></dir><dir name="Widget"><file name="Form.php" hash="2ff551578385ed3a268b793bf3ef60ae"/><file name="Options.php" hash="3d9eba1e10f9bbd33d6355c6981c1184"/></dir></dir><file name="Template.php" hash="4bce8d292f15ef1008388396a633b201"/></dir><dir name="Helper"><file name="Data.php" hash="776dc228a0104cbc39850a1579a35c40"/></dir><file name="LICENSE" hash="6a0a6168ec4c6f2fd63a98ee0b4266be"/><dir name="Model"><file name="Observer.php" hash="9d5d2cfe99e753e3972789b1baf8db0b"/><file name="Output.php" hash="a219817107f3a994c992de29440409e4"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Widgettypes.php" hash="2afcc16654ada4441cefd49cf9d8bec2"/></dir></dir></dir><dir name="Template"><file name="Localdir.php" hash="3feb48665f36f2d06ce48da510fe2c48"/></dir></dir><dir name="etc"><file name="config.xml" hash="3c3364d3cea9e35408d857e472de63b1"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="clockworkgeek"><file name="formelements.xml" hash="4b13837b595e776cd603de0ac90e6c21"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Clockworkgeek_Formelements.xml" hash="bbb30c78696151b42a20ac9f66f3e77e"/></dir></target><target name="mageweb"><dir name="js"><dir name="clockworkgeek"><file name="formelements.js" hash="fd883b965ef815e6db8d6e72dd7565e9"/></dir></dir></target><target name="magelib"><dir name="Clockworkgeek"><dir name="Data"><file name="Form.php" hash="b2ccf7bb02363831e1ef802ef9208c2a"/><dir name="Form"><dir name="Element"><file name="Color.php" hash="f5f2edf28f5852224d356b0c8093f101"/><file name="Email.php" hash="c47537a9d44fa5492b4e4e132c7270a0"/><file name="Mediaurl.php" hash="2d7fde9858ae64baa551f82669c819c2"/><file name="Number.php" hash="6d3f8a188d6f316a224c72771fe50f4a"/><file name="Url.php" hash="a4bedba54b8ea66e6f919478de2e3c98"/><file name="Widget.php" hash="a8dc73d26b7e988a488889c7590cc767"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
