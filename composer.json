@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Clockworkgeek_Formelements",
+    "name": "OpenMageModuleFostering\/Clockworkgeek_Formelements",
     "type": "magento-module",
     "license": "MIT",
     "homepage": "",
     "description": "Adds HTML5 input types and some WYSIWYG features to admin forms and product attributes.",
     "authors": [
-    {
-        "name": "Daniel Deady",
-        "email": "daniel@clockworkgeek.com"
-    }
-],
+        {
+            "name": "Daniel Deady",
+            "email": "daniel@clockworkgeek.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
